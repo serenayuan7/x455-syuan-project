@@ -1,0 +1,97 @@
+<html>
+
+
+
+    <head>
+    <style>
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+    
+div.gallery-item {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 180px;
+}
+
+div.gallery-item:hover {
+  border: 1px solid #777;
+}
+
+div.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+    .margin-demo-1 {
+      border: 1px solid red;
+      margin: 25px 50px 75px 100px;
+      /* top right bottom left */
+      background-color: honeydew;
+    }
+
+    .padding-demo-1 {
+      border: 4px dashed green;
+      margin: 25px 50px 75px 100px;
+      /* top right bottom left */
+      padding: 25px 50px 75px 100px;
+      /* top right bottom left */
+      background-color: honeydew;
+    }
+        
+</style>
+    
+</head>
+
+    <body>
+    
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Home </a>
+  <a href="#">About</a>
+  <a href="#">Shopping Cart</a>
+  <a href="#">Gallery</a>
+  <a href="#">Tutorials</a>
+    <a href="#">Plants on Sale</a>
+</div>
+
+<!-- Use any element to open the sidenav -->
+<span onclick="openNav()">open</span>
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+  <h1>About</h1>
+
+<img src="images/homeimage.jpg"> 
+
+    <div class="gallery-item">
+    <img src="images/plant1.png">
+    <div class="desc">art 1 </div>
+</div>
+
+    <div class="gallery-item">
+    <img src="images/plant2.png">
+    <div class="desc">art 1 </div>
+</div>
+
+    <div class="gallery-item">
+    <img src="images/plant3.png">
+    <div class="desc">art 1 </div>
+</div>
+
+    <h2>
+   This is my personal plant shop. I am selling a variety of house plants, bonsai plants, rare plants, outdoor plants, bamboo plants, fruit and vegetable plants, and more. Please follow me on social media. 
+     </h2>
+
+<div class="margin-demo-1">
+      This div element has a top margin of 25px, a right margin of 50px, a bottom margin of 75px, and a left margin of
+      100px.
+    </div>
+    
+</div>
+
+</body>
+
+</html>
