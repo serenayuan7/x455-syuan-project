@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+    
+div.gallery-item {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 180px;
+}
+
+div.gallery-item:hover {
+  border: 1px solid #777;
+}
+
+div.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+</style>
+    
+</head>
+
+<body style="background-color: lightgreen;">
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Home </a>
+  <a href="#">About</a>
+  <a href="#">Shopping Cart</a>
+  <a href="#">Gallery</a>
+  <a href="#">Tutorials</a>
+    <a href="#">Plants on Sale</a>
+</div>
+
+
+<div id="main">
+
+<div class="gallery"> 
+
+<div class="gallery-item">
+    <img src="images/artimage1.png">
+    <div class="desc">art 1 </div>
+</div>
+
+<div class="gallery-item">
+    <img src="images/artimage2.png">
+    <div class="desc">art 2 </div>
+</div>
+
+<div class="gallery-item">
+    <img src="images/artimage3.png">
+    <div class="desc">art 3 </div>
+</div>
+    
+</div>
+
+</body>
+</html>
