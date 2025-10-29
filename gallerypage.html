@@ -24,6 +24,33 @@ div.gallery-item img {
   height: auto;
 }
 
+.gallery-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+ul {
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+li {
+  scroll-snap-align: center;
+}
+
 </style>
     
 </head>
@@ -59,8 +86,32 @@ div.gallery-item img {
     <img src="images/artimage3.png">
     <div class="desc">art 3 </div>
 </div>
+
+<div class="gallery-cell"><img src="images/artimage1.png"></div>
+  <div class="gallery-cell"></div>
+  <div class="gallery-cell"></div>
     
 </div>
 
+<h1> Art of Plants Gallery </h1>
+<ul>
+  <li>
+       <img src="images/artimage1.png">
+    <h2>Art 1</h2>
+  </li>
+  <li>
+       <img src="images/artimage2.png">
+    <h2>Art 2</h2>
+  </li>
+  <li>
+       <img src="images/artimage3.png">
+    <h2>Page 3</h2>
+  </li>
+  <li>
+    <h2>Page 4</h2>
+  </li>
+</ul>
+
+<script src="carousel-javascript.js"></script>
 </body>
 </html>
