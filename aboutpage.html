@@ -3,6 +3,11 @@
 
 
     <head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+
+        
     <style>
 div.gallery {
   display: flex;
@@ -46,7 +51,27 @@ div.gallery-item img {
 </head>
 
     <body>
-    
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h3 class="w3-wide"><b>LOGO</b></h3>
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">     
+ 
+ <a href="index.html" class="w3-bar-item w3-button">Home </a>
+  <a href="aboutpage.html" class="w3-bar-item w3-button">About</a>
+  <a href="#" class="w3-bar-item w3-button">Shopping Cart</a>
+  <a href="gallerypage.html" class="w3-bar-item w3-button">Gallery</a>
+  <a href="#" class="w3-bar-item w3-button">Tutorials</a>
+    <a href="#" class="w3-bar-item w3-button">Plants on Sale</a>
+      
+  </div>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
+  <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
+</nav>
+        
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="#">Home </a>
@@ -64,7 +89,7 @@ div.gallery-item img {
 <div id="main">
   <h1>About</h1>
 
-<img src="images/homeimage.jpg"> 
+<img src="images/aboutimage.jpg"> 
 
     <div class="gallery-item">
     <img src="images/plant1.png">
@@ -81,9 +106,18 @@ div.gallery-item img {
     <div class="desc">art 1 </div>
 </div>
 
+    <div class="w3-panel w3-leftbar w3-light-grey">    
     <h2>
    This is my personal plant shop. I am selling a variety of house plants, bonsai plants, rare plants, outdoor plants, bamboo plants, fruit and vegetable plants, and more. Please follow me on social media. 
      </h2>
+    </div>
+
+    <div class="w3-panel w3-leftbar w3-light-grey">
+        <p>
+            <i>Some old-fashioned things like fresh air and sunshine are hard to beat.</i>
+        </p>
+        <p> Laura Ingalls Wilder</p>
+        </div>
 
 <div class="margin-demo-1">
       This div element has a top margin of 25px, a right margin of 50px, a bottom margin of 75px, and a left margin of
