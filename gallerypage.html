@@ -42,6 +42,13 @@ div.gallery-item img {
   color: white;
 }
 
+/* center the carousel slide */
+      .mySlides {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 65%;
+      }
+
 ul {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
@@ -93,6 +100,29 @@ li {
     
 </div>
 
+
+<!-- carousel slideshow begin -->
+          <div>
+            <img class="mySlides" src="images/artimage1.png" style="width: 100%" />
+            <img
+              class="mySlides"
+              src="images/artimage1.png"
+              style="width: 100%; display: none"
+            />
+            <img
+              class="mySlides"
+              src="images/artimage2.png"
+              style="width: 100%; display: none"
+            />
+            <img
+              class="mySlides"
+              src="images/artimage3.png"
+              style="width: 100%; display: none"
+            />
+          </div>
+          <!-- carousel slideshow end -->
+    
+    
 <h1> Art of Plants Gallery </h1>
 <ul>
   <li>
@@ -113,5 +143,70 @@ li {
 </ul>
 
 <script src="carousel-javascript.js"></script>
+
+<script>
+      // mobile version begin
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+      }
+      // mobile version end
+
+      // carousel slideshow begin
+      var myIndex = 0;
+      carousel();
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+
+      // slideshow - carousel
+      // hook each carousel button
+      function currentDiv(n) {
+        showDivs((slideIndex = n));
+        myIndex = n;
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+        }
+        x[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " w3-opacity-off";
+      }
+      // carousel slideshow end
+    </script>
 </body>
 </html>
