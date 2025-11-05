@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+
+<script src="https://kit.fontawesome.com/6b6f81b8bd.js" crossorigin="anonymous"></script>
+    
     <style>
 div.gallery {
   display: flex;
@@ -49,14 +52,10 @@ div.gallery-item img {
         max-width: 65%;
       }
 
-ul {
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-}
-
-li {
-  scroll-snap-align: center;
-}
+.my-scrolling {
+        height: 300px;
+        overflow: auto;
+      }
 
 </style>
     
@@ -64,11 +63,14 @@ li {
 
 <body style="background-color: lightgreen;">
 
+
+    <i class="fa-solid fa-cart-shopping" style="float:right; top:0px; right:0px;"></i>
+    
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="#">Home </a>
   <a href="#">About</a>
-  <a href="#">Shopping Cart</a>
+  <a href="#">Plant Information</a>
   <a href="#">Gallery</a>
   <a href="#">Tutorials</a>
     <a href="#">Plants on Sale</a>
@@ -121,26 +123,67 @@ li {
             />
           </div>
           <!-- carousel slideshow end -->
+<!-- carousel thumbnail begin -->
+<div class="w3-col s3">
+<img class="demo w3-opacity w3-hover-opacity-off"
+              src="images/artimage1.png"
+              style="width: 100%; cursor: pointer; padding: 7px"
+              onclick="currentDiv(1)"
+            />
+          </div>
+ <div class="w3-col s3">
+            <!-- "currentDiv(2)" link to 2nd slide -->
+            <!-- demo class is used by a javascript function to turn off the opacity effect -->
+            <img
+              class="demo w3-opacity w3-hover-opacity-off"
+              src="images/artimage2.png"
+              style="width: 100%; cursor: pointer; padding: 7px"
+              onclick="currentDiv(2)"
+            />
+          </div>
+ <div class="w3-col s3">
+            <!-- "currentDiv(2)" link to 2nd slide -->
+            <!-- demo class is used by a javascript function to turn off the opacity effect -->
+            <img
+              class="demo w3-opacity w3-hover-opacity-off"
+              src="images/artimage3.png"
+              style="width: 100%; cursor: pointer; padding: 7px"
+              onclick="currentDiv(2)"
+            />
+          </div>
+
+     <div class="w3-col s3">
+            <!-- "currentDiv(2)" link to 2nd slide -->
+            <!-- demo class is used by a javascript function to turn off the opacity effect -->
+            <img
+              class="demo w3-opacity w3-hover-opacity-off"
+              src="images/artimage4.png"
+              style="width: 100%; cursor: pointer; padding: 7px"
+              onclick="currentDiv(2)"
+            />
+          </div>
     
+
+<!-- carousel thumbnail end -->
+
+
+    <!-- scrollable text area begin -->
+
+<div class= "my-scrolling">
+<p>
+    The morning glory plant is a fast growing plant known for their trumpet-shaped flowers that open and blossom in the morning and close by the afternoon. They need 6 to 8 hours of sunlight to bloom well. The morning glory symbolizes love, affection, resilience, and new beginnings.
     
-<h1> Art of Plants Gallery </h1>
-<ul>
-  <li>
-       <img src="images/artimage1.png">
-    <h2>Art 1</h2>
-  </li>
-  <li>
-       <img src="images/artimage2.png">
-    <h2>Art 2</h2>
-  </li>
-  <li>
-       <img src="images/artimage3.png">
-    <h2>Page 3</h2>
-  </li>
-  <li>
-    <h2>Page 4</h2>
-  </li>
-</ul>
+    The iris plant blooms in full sun, and therefore needs at least 6 to 8 hours of sunlight every day. Irises are perennial plants that return to bloom year after year. Most irises come from rhizomes or bulbs, and are a reliable, hardy garden plant that can last many years given the proper care. The iris is a bearer of messages and a symbol of deep sentiments. 
+
+    The hibiscus plant is a perennial plant that comes back every year. It belongs to the mallow family and the genus consists of several hundred species that are native to warm temperate, subtropical, and tropical regions in the world. Their flowers are large and have five or more petals, with colors ranging from white to pink, red, blue, orange, peach, yellow, or purple. 
+    
+    The carnivorous butterwort plant needs a lot of UV rays. Butterworts are a genus of carnivorous plants known as Pinguicula that use their sticky, glandular leaves to trap and digest insects. Found across the Northern Hemisphere and Central and South America, they have beautiful and long-lasting flowers. 
+    
+</p>
+</div>
+    
+  <!-- scrollable text area end -->
+    
 
 <script src="carousel-javascript.js"></script>
 
