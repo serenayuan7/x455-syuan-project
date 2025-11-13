@@ -92,7 +92,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
                we set 'modal02' in getElementById('modal02') -->
             <div class="w3-col s4">
               <img
-                src="./img/chef-april-bloomfield-150x150.jpg"
+                src="images/plant3.png"
                 style="width: 100%; cursor: zoom-in"
                 onclick="document.getElementById('modal02').style.display='block'"
                 class="w3-hover-shadow"
@@ -100,9 +100,15 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
             </div>
 
             <!-- continue to add the last thumbnail image in the first row here -->
-            <div>
-              <!-- add code to add the last thumbnail image in the first row here -->
+            <div class="w3-col s4">
+              <img
+                src="images/plant4.png"
+                style="width: 100%; cursor: zoom-in"
+                onclick="document.getElementById('modal03').style.display='block'"
+                class="w3-hover-shadow"
+              />
             </div>
+            
           </div>
 
           <!-- if needed, follow the samples above to create second row of thumbnail images here -->
@@ -125,8 +131,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
             >
             <!-- add modal background image -->
             <div class="w3-modal-content w3-animate-zoom">
-              <h4 class="w3-center">Alice Waters - 1</h4>
-              <img src="images/plant1.png" style="width: 100%" />
+              <h4 class="w3-center"> Plant 2</h4>
+              <img src="images/plant2.png" style="width: 100%" />
             </div>
           </div>
 
@@ -145,8 +151,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
             >
             <!-- add modal background image -->
             <div class="w3-modal-content w3-animate-zoom">
-              <h4 class="w3-center">April Bloomfield</h4>
-              <img src="images/plant1.png" style="width: 100%" />
+              <h4 class="w3-center"> Plant 3 </h4>
+              <img src="images/plant3.png" style="width: 100%" />
             </div>
           </div>
 
@@ -158,6 +164,17 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
             onclick="this.style.display='none'"
           >
             <!-- add code to add modal for each thumbnail image -->
+            <span
+              class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+              style="cursor: pointer"
+              >&times;</span
+            >
+            <!-- add modal background image -->
+            <div class="w3-modal-content w3-animate-zoom">
+              <h4 class="w3-center"> Plant 4 </h4>
+              <img src="images/plant4.png" style="width: 100%" />
+            </div>
+            
           </div>
         </div>
       </div>
