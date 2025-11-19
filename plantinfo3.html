@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Plant Information</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/sortabletablestyle.css" />
+    <style>
+      .w3-sidebar a {
+        font-family: "Roboto", sans-serif;
+      }
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      .w3-wide {
+        font-family: "Montserrat", sans-serif;
+      }
+
+      /* center the carousel slide */
+      .mySlides {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 65%;
+      }
+
+      .my-scrolling {
+        height: 100px;
+        width: 300px;
+        overflow: auto;
+        overflow-y: auto;
+      }
+    </style>
+  </head>
+  <body
+    class="w3-content"
+    style="max-width: 1200px; background-color: lightgreen"
+  >
+    <!-- Sidebar/menu -->
+    <nav
+      class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top"
+      style="z-index: 3; width: 250px"
+      id="mySidebar"
+    >
+      <div class="w3-container w3-display-container w3-padding-16">
+        <i
+          onclick="w3_close()"
+          class="fa fa-remove w3-hide-large w3-button w3-display-topright"
+        ></i>
+        <h3 class="w3-wide">
+          <b><img src="images/logoplantshop.png" style="width: 70%" /></b>
+        </h3>
+      </div>
+      <div
+        class="w3-padding-64 w3-large w3-text-grey"
+        style="font-weight: bold"
+      >
+        <a href="index.html" class="w3-bar-item w3-button">Home </a>
+        <a href="about2.html" class="w3-bar-item w3-button">About</a>
+        <a href="plantinfo2.html" class="w3-bar-item w3-button"
+          >Plant Information</a
+        >
+        <a href="gallery2.html" class="w3-bar-item w3-button">Gallery</a>
+        <a href="tutorialpage.html" class="w3-bar-item w3-button">
+          Tutorials
+        </a>
+        <a href="plantsonsale2.html" class="w3-bar-item w3-button"
+          >Plants on Sale</a
+        >
+      </div>
+      <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a>
+      <a
+        href="javascript:void(0)"
+        class="w3-bar-item w3-button w3-padding"
+        onclick="document.getElementById('newsletter').style.display='block'"
+        >Newsletter</a
+      >
+      <a href="#footer" class="w3-bar-item w3-button w3-padding">Subscribe</a>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+      <div class="w3-bar-item w3-padding-24 w3-wide">
+        Bamboo For All Society
+      </div>
+      <a
+        href="javascript:void(0)"
+        class="w3-bar-item w3-button w3-padding-24 w3-right"
+        onclick="w3_open()"
+        ><i class="fa fa-bars"></i
+      ></a>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div
+      class="w3-overlay w3-hide-large"
+      onclick="w3_close()"
+      style="cursor: pointer"
+      title="close side menu"
+      id="myOverlay"
+    ></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left: 250px">
+      <!-- Push down content on small screens -->
+      <div class="w3-hide-large" style="margin-top: 83px"></div>
+
+      <!-- Top header -->
+      <header class="w3-container w3-xlarge">
+        <p class="w3-left">Plant Information</p>
+        <p class="w3-right">
+          <i class="fa fa-shopping-cart w3-margin-right"></i>
+          <i class="fa fa-search"></i>
+        </p>
+      </header>
+
+      <!-- embedded youtube videos -->
+
+      <div class="w3-container" id="videos">
+        <!-- <div class="w3-padding-large"> pam removed-->
+        <div>
+          <h1 class="w3-center">Info Videos</h1>
+          <!-- first row -->
+          <div class="w3-row">
+            <!-- create first column -->
+
+            <div class="w3-col m5 w3-center w3-margin">
+              <h3>Rare Plants</h3>
+              <iframe
+                height="300"
+                src="https://www.youtube.com/embed/kC-R0t8uuSc?si=YfaVJFrZPfdeGWho"
+                title="Plant Propagation"
+                frameborder="0"
+                allow="autoplay;"
+              ></iframe>
+            </div>
+
+            <!-- second column -->
+            <div class="w3-col m5 w3-center w3-margin">
+              <h3>Houseplants 101</h3>
+              <iframe
+                height="300"
+                src="https://www.youtube.com/embed/1dOoRwvO3qY?si=i3Whoj0C2hUzdbM7"
+                title="Houseplants 101"
+                frameborder="0"
+                allow="autoplay;"
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- second row -->
+          <div class="w3-row">
+            <!-- first column -->
+            <div class="w3-col m5 w3-center w3-margin">
+              <h3>Plant Propagation in Water</h3>
+              <iframe
+                height="300"
+                src="https://www.youtube.com/embed/kk4-NzpbXxw?si=Uh9m0Yc2HBTH4j7F"
+                title="YouTube video player"
+                frameborder="0"
+                allow="autoplay;"
+              ></iframe>
+              <!-- </div> pam removed extra closing tag -->
+            </div>
+
+            <!-- pam added a video on the second row second column -->
+            <div class="w3-col m5 w3-center w3-margin">
+              <h3>Plant Propagation in Water</h3>
+              <iframe
+                height="300"
+                src="https://www.youtube.com/embed/kk4-NzpbXxw?si=Uh9m0Yc2HBTH4j7F"
+                title="YouTube video player"
+                frameborder="0"
+                allow="autoplay;"
+              ></iframe>
+            </div>
+            <!-- </li> pam removed extra closing tag -->
+          </div>
+        </div>
+      </div>
+      <!-- pam added missing close tag -->
+
+      <!-- add accordion begin -->
+      <!-- step 1: add accordion button -->
+      <!-- step 2: add accordion content -->
+      <!-- step 3: add accordion javascript in <script> below -->
+      <!-- step 4: use id selectors in <style> tag above to format the accordion buttons -->
+      <div class="w3-row">
+        <!-- create an area to hold both accordion button and content -->
+        <div class="w3-col s6 w3-left" style="padding-right: 3px">
+          <!-- add accordion button here -->
+          <!-- set button to myAccordion('accordion1') to link to its accordion content -->
+          <!-- set a unique id="accordionBtn1" for the button -->
+          <button
+            onclick="myAccordion('accordion1')"
+            class="w3-button w3-block w3-brown w3-center-align"
+            id="accordionBtn1"
+          >
+            <!-- 
+                  Here is using Font Awesome 4 css and icon. You may check it out here:
+                    https://www.w3schools.com/icons/fontawesome_icons_intro.asp
+                  Note: there are 2 versions - 4 and 5. This website is using Font Awesome 4.
+                -->
+            <h4>Plant Care Tip 1 <i class="fa fa-caret-down"></i></h4>
+          </button>
+          <!-- add accordion content here -->
+          <!-- set a unique id="accordion1" for the accordion content -->
+          <div
+            id="accordion1"
+            class="w3-hide w3-container"
+            style="height: 260px"
+          >
+            <p>
+              Check soil moisture: Before watering, stick your finger about an
+              inch or two into the soil. If it feels dry, it's time to water. If
+              it's still moist, skip watering. Water thoroughly: When you do
+              water, do so deeply so all the roots get a drink. Water until you
+              see a small amount of water draining from the bottom, and then
+              empty the drainage tray so the plant isn't sitting in excess
+              water. Ensure proper drainage: Always use pots with drainage holes
+              to prevent overwatering and allow roots to get air.
+            </p>
+          </div>
+        </div>
+        <!-- repeat the steps to create another accordion button and content here -->
+        <!-- each button id and accordion content id should be unique -->
+        <!-- set button to myAccordion('accordion2') to link to its accordion content -->
+        <!-- set a unique id="accordionBtn1" for the button -->
+        <div class="w3-col s6 w3-left" style="padding-left: 3px">
+          <button
+            onclick="myAccordion('accordion2')"
+            class="w3-button w3-block w3-brown w3-center-align"
+            id="accordionBtn2"
+          >
+            <h4>Plant Care Tip 2 <i class="fa fa-caret-down"></i></h4>
+          </button>
+          <!-- add accordion content here -->
+          <!-- set a unique id="accordion2" for the accordion content -->
+          <div
+            id="accordion2"
+            class="w3-hide w3-container"
+            style="height: 260px"
+          >
+            <p>
+              Provide the right light: Research your specific plant's needs, as
+              some prefer bright, indirect light while others need more direct
+              sun. Low-light plants still need some light, such as what a
+              bathroom window provides. Move seasonally: Adjust plant placement
+              as the seasons change, especially in winter when there are fewer
+              daylight hours. Consider grow lights: If you don't have enough
+              natural light, a grow light can help supplement it.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer
+        class="w3-padding-64 w3-light-grey w3-small w3-center"
+        id="footer"
+      >
+        <div class="w3-row-padding">
+          <div class="w3-col s4">
+            <h4>Contact</h4>
+            <p>Questions? Go ahead.</p>
+            <form action="/action_page.php" target="_blank">
+              <p>
+                <input
+                  class="w3-input w3-border"
+                  type="text"
+                  placeholder="Name"
+                  name="Name"
+                  required
+                />
+              </p>
+              <p>
+                <input
+                  class="w3-input w3-border"
+                  type="text"
+                  placeholder="Email"
+                  name="Email"
+                  required
+                />
+              </p>
+              <p>
+                <input
+                  class="w3-input w3-border"
+                  type="text"
+                  placeholder="Subject"
+                  name="Subject"
+                  required
+                />
+              </p>
+              <p>
+                <input
+                  class="w3-input w3-border"
+                  type="text"
+                  placeholder="Message"
+                  name="Message"
+                  required
+                />
+              </p>
+              <button type="submit" class="w3-button w3-block w3-black">
+                Send
+              </button>
+            </form>
+          </div>
+
+          <div class="w3-col s4 w3-justify">
+            <h4>Store</h4>
+            <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p>
+            <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
+            <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
+            <h4>We accept</h4>
+            <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
+            <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+            <br />
+            <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+            <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+            <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+            <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+            <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+          </div>
+        </div>
+      </footer>
+
+      <!-- End page content -->
+    </div>
+
+    <script src="js/sortable-table.js"></script>
+
+    <script>
+      function myAccordion(id) {
+        var x = document.getElementById(id);
+        // if the accordion text is hidden, show it and change the button color to orange
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace("w3-brown", "w3-orange");
+        } else {
+          // if the accordion text is displayed, hide it and change the button color to brown
+          x.className = x.className.replace(" w3-show", "");
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace("w3-orange", "w3-brown");
+        }
+      }
+
+      // Accordion
+      function myAccFunc() {
+        var x = document.getElementById("demoAcc");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+
+      // Click on the "Jeans" link on page load to open the accordion for demo purposes
+      document.getElementById("myBtn").click();
+
+      // Open and close sidebar
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
+
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
